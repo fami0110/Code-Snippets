@@ -1,0 +1,160 @@
+{
+  "HTML Boilerplate": {
+    "prefix": "!",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<head>",
+      "\t<meta charset=\"UTF-8\">",
+      "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "\t<title>${1:Document}</title>",
+      "</head>",
+      "<body>",
+      "\t$0",
+      "</body>",
+      "</html>"
+    ],
+    "description": "HTML boilerplate"
+  },
+  "PHP Open Tag": {
+     "prefix": "php",
+     "body": [
+       "<?php",
+       "$1",
+       ""
+     ],
+     "description": "PHP open tag snippet"
+   },
+  "PHP Template Tag": {
+     "prefix": "?",
+     "body": [
+       "<?php $1 ?>"
+     ],
+     "description": "PHP template tag snippet"
+   },
+  "PHP Template": {
+    "prefix": "?=",
+    "body": [
+      "<?= $1 ?>"
+    ],
+    "description": "PHP echo template"
+  },
+  "PHP Echo": {
+    "prefix": "echo",
+    "body": [
+      "echo $1;"
+    ],
+    "description": "PHP echo statement"
+  },
+  "PHP If Statement": {
+    "prefix": "if",
+    "body": [
+      "if ($1) {",
+      "\t$2",
+      "}"
+    ],
+    "description": "PHP if statement"
+  },
+  "PHP Template If Statement": {
+    "prefix": "?if",
+    "body": [
+      "<?php if ($1): ?>",
+      "\t$2",
+      "<?php endif; ?>"
+    ],
+    "description": "PHP template if statement"
+  },
+  "PHP If Else Statement": {
+    "prefix": "ifelse",
+    "body": [
+      "if ($1) {",
+      "\t$2",
+      "} else {",
+      "\t$3",
+      "}"
+    ],
+    "description": "PHP if else statement"
+  },
+  "PHP Template If Else Statement": {
+    "prefix": "?ifelse",
+    "body": [
+      "<?php if ($1): ?>",
+      "\t$2",
+      "<?php else: ?>",
+      "\t$3",
+      "<?php endif; ?>"
+    ],
+    "description": "PHP template if else statement"
+  },
+  "PHP Foreach Loop": {
+    "prefix": "foreach",
+    "body": [
+      "foreach (\\$${1:iterable} as \\$${2:item}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "PHP foreach loop"
+  },
+  "PHP Template Foreach Loop": {
+    "prefix": "?foreach",
+    "body": [
+      "<?php foreach (\\$${1:iterable} as \\$${2:item}): ?>",
+      "\t$0",
+      "<?php endforeach; ?>"
+    ],
+    "description": "PHP template foreach loop"
+  },
+  "PHP Function": {
+    "prefix": "function",
+    "body": [
+      "function ${1:functionName}(\\$${2:params}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "PHP function declaration"
+  },
+  "PHP Class": {
+    "prefix": "class",
+    "body": [
+      "class ${1:ClassName}",
+      "{",
+      "\tpublic function __construct(\\$${2:params}) ",
+      "\t{",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "PHP class declaration with a constructor"
+  },
+  "PHP Try Catch": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t$1",
+      "} catch (\\Exception \\$e) {",
+      "\t$2",
+      "}"
+    ],
+    "description": "PHP try catch block"
+  },
+  "PHP Var Dump & Die": {
+    "prefix": "vdd",
+    "body": [
+      "echo '<pre>';",
+      "var_dump($1);",
+      "echo '</pre>';",
+      "die();"
+    ],
+    "description": "Quick var_dump and die for debugging"
+  },
+  "PHP Print Dump & Die": {
+    "prefix": "pdd",
+    "body": [
+      "echo '<pre>';",
+      "print_r($1);",
+      "echo '</pre>';",
+      "die();"
+    ],
+    "description": "Quick print_r and die for debugging"
+  }
+}

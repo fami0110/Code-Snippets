@@ -1,0 +1,105 @@
+{
+  "Heading 1": {
+    "prefix": "h1",
+    "body": "# ${1:Heading 1}",
+    "description": "Markdown H1"
+  },
+  "Heading 2": {
+    "prefix": "h2",
+    "body": "## ${1:Heading 2}",
+    "description": "Markdown H2"
+  },
+  "Heading 3": {
+    "prefix": "h3",
+    "body": "### ${1:Heading 3}",
+    "description": "Markdown H3"
+  },
+  "Heading 4": {
+    "prefix": "h4",
+    "body": "#### ${1:Heading 4}",
+    "description": "Markdown H4"
+  },
+  "Heading 5": {
+    "prefix": "h5",
+    "body": "##### ${1:Heading 5}",
+    "description": "Markdown H5"
+  },
+  "Heading 6": {
+    "prefix": "h6",
+    "body": "###### ${1:Heading 6}",
+    "description": "Markdown H6"
+  },
+
+  "Bold": {
+    "prefix": "b",
+    "body": "**${1:bold text}**",
+    "description": "Bold text"
+  },
+  "Italic": {
+    "prefix": "i",
+    "body": "*${1:italic text}*",
+    "description": "Italic text"
+  },
+  "Bold Italic": {
+    "prefix": "bi",
+    "body": "***${1:bold italic}***",
+    "description": "Bold + Italic"
+  },
+
+  "Inline Code": {
+    "prefix": "code",
+    "body": "`${1:code}`",
+    "description": "Inline code"
+  },
+  "Code Block": {
+    "prefix": "cb",
+    "body": "```$1\n$2\n```",
+    "description": "Code block"
+  },
+
+  "Link": {
+    "prefix": "link",
+    "body": "[${1:text}](${2:url})",
+    "description": "Insert link"
+  },
+  "Image": {
+    "prefix": "img",
+    "body": "![${1:alt}](${2:url})",
+    "description": "Insert image"
+  },
+
+  "Unordered List": {
+    "prefix": "ul",
+    "body": "- ${1:item 1}\n- ${2:item 2}\n- ${3:item 3}",
+    "description": "Bullet list"
+  },
+  "Ordered List": {
+    "prefix": "ol",
+    "body": "1. ${1:item 1}\n2. ${2:item 2}\n3. ${3:item 3}",
+    "description": "Numbered list"
+  },
+
+  "Checklist": {
+    "prefix": "check",
+    "body": "- [ ] ${1:task 1}\n- [ ] ${2:task 2}",
+    "description": "Checklist"
+  },
+
+  "Blockquote": {
+    "prefix": "quote",
+    "body": "> ${1:quote}",
+    "description": "Blockquote"
+  },
+
+  "Horizontal Rule": {
+    "prefix": "hr",
+    "body": "---",
+    "description": "Horizontal line"
+  },
+
+  "Table": {
+    "prefix": "table",
+    "body": "| ${1:Header 1} | ${2:Header 2} |\n| -------- | -------- |\n| ${3:Cell 1} | ${4:Cell 2} |",
+    "description": "Markdown table"
+  }
+}

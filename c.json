@@ -1,0 +1,131 @@
+{
+  "C Main Boilerplate": {
+    "prefix": "main",
+    "body": [
+      "#include <stdio.h>",
+      "#include <stdlib.h>",
+      "",
+      "int main(int argc, char *argv[]) {",
+      "    $1",
+      "    return 0;",
+      "}"
+    ],
+    "description": "Basic C main function boilerplate"
+  },
+  "C Random Number Boilerplate": {
+    "prefix": "randint",
+    "body": [
+      "#include <time.h>",
+      "",
+      "int randint(int min, int max) {",
+      "    srand(time(NULL));",
+      "    return rand() % (max - min + 1) + min;",
+      "}"
+    ],
+    "description": "Generate random number in range [min, max]"
+  },
+  "C Get Size of an Array": {
+    "prefix": "len",
+    "body": [
+      "int length = sizeof(${1:array}) / sizeof(${1:array}[0]);"
+    ],
+    "description": "Get actual length items of array"
+  },
+  "C Printf": {
+    "prefix": "pf",
+    "body": [
+      "printf(\"${1:%}\\n\"$2);"
+    ],
+    "description": "Print a character with format specifier to stdout"
+  },
+  "C Puts": {
+    "prefix": "pt",
+    "body": [
+      "puts(\"$1\");"
+    ],
+    "description": "Print a character with newline at the end specifier to stdout"
+  },
+  "C Fgets": {
+    "prefix": "fg",
+    "body": [
+      "fgets(${1:buffer}, ${2:sizeof(buffer)}, ${3:stdin});"
+    ],
+    "description": "Fgets to retreive user input with limited buffer lenght"
+  },
+  "C If": {
+    "prefix": "if",
+    "body": [
+      "if (${1:condition}) {",
+      "    $2",
+      "}"
+    ],
+    "description": "C if statement"
+  },
+  "C If Else": {
+    "prefix": "ifelse",
+    "body": [
+      "if (${1:condition}) {",
+      "    $2",
+      "} else {",
+      "    $3",
+      "}"
+    ],
+    "description": "C if-else statement"
+  },
+  "C If Else If": {
+    "prefix": "ifelseif",
+    "body": [
+      "if (${1:condition}) {",
+      "    $2",
+      "} else if (${3:condition}) {",
+      "    $4",
+      "} else {",
+      "    $5",
+      "}"
+    ],
+    "description": "C if-else-if statement"
+  },
+  "C Switch": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:expression}) {",
+      "    case ${2:value}:",
+      "        $3",
+      "        break;",
+      "    case ${4:value}:",
+      "        $5",
+      "        break;",
+      "    default:",
+      "        $6",
+      "}"
+    ],
+    "description": "C switch statement"
+  },
+  "C While Loop": {
+    "prefix": "while",
+    "body": [
+      "while (${1:condition}) {",
+      "    $2",
+      "}"
+    ],
+    "description": "C while loop"
+  },
+  "C Do While Loop": {
+    "prefix": "dowhile",
+    "body": [
+      "do {",
+      "    $1",
+      "} while (${2:condition});"
+    ],
+    "description": "C do-while loop"
+  },
+  "C For Loop": {
+    "prefix": "for",
+    "body": [
+      "for (${1:int i = 0}; ${2:i < n}; ${3:i++}) {",
+      "    $4",
+      "}"
+    ],
+    "description": "C for loop"
+  }
+}
