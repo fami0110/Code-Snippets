@@ -1,0 +1,66 @@
+{
+  "Java Main Class": {
+    "prefix": "main",
+    "body": [
+      "public class ${1:Main} {",
+      "    public static void main(String[] args) {",
+      "        $2",
+      "    }",
+      "}"
+    ],
+    "description": "Create a Java Main class with main method"
+  },
+  "Java Scanner Input": {
+    "prefix": "sc",
+    "body": [
+      "Scanner ${1:sc} = new Scanner(System.in);"
+    ],
+    "description": "Create a Scanner for user input"
+  },
+  "Print ln": {
+    "prefix": "pl",
+    "body": [
+      "System.out.println(${1});"
+    ],
+    "description": "Print line"
+  },
+  "Print": {
+    "prefix": "pr",
+    "body": [
+      "System.out.print(${1});"
+    ],
+    "description": "Print"
+  },
+  "Printf": {
+    "prefix": "pf",
+    "body": [
+      "System.out.printf(${1:\"%s\"}, ${2:bar});"
+    ],
+    "description": "Formatted print"
+  },
+  "String format": {
+    "prefix": "sf",
+    "body": [
+      "String ${1:result} = String.format(${2:\"%s\"}, ${3:bar});"
+    ],
+    "description": "String.format shortcut"
+  },
+  "Void Function": {
+    "prefix": "void",
+    "body": [
+      "void ${1:foo}(${2}) {",
+      "    ${0}",
+      "}"
+    ],
+    "description": "Void function"
+  },
+  "Function with Return": {
+    "prefix": "fun",
+    "body": [
+      "public static ${1:int} ${2:foo}(${3}) {",
+      "    ${0: return 0}",
+      "}"
+    ],
+    "description": "Function with return type"
+  }
+}
